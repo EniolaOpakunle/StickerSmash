@@ -1,11 +1,11 @@
+import { View, Text } from 'react-native'
 import React from 'react'
-import { View } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
-function index() {
-  return (<View>
-    <Text>Hello index.jsx</Text>
-  </View>
+export default function index() {
+  return (
+    <SafeAreaView>
+      <Text>index</Text>
+    </SafeAreaView>
   )
 }
-
-export default index

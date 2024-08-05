@@ -1,12 +1,13 @@
+import { Stack } from "expo-router";
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import React from 'react'
+import { StyleSheet, View, Text} from "react-native";
+// import React from 'react';
 
 function _layout() {
   return (
-    <View>
-        <Text>Hello Layout</Text>
-    </View>
+    <Stack>
+      <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
+    </Stack>
   )
 }
 
